@@ -565,6 +565,55 @@ var group_IndicatoriSocioDemografici = new ol.layer.Group({
                                 title: 'Socio-Demographic Indicators',
                                 noOpacity: true});
 
+// --- FAKE TEXT-ONLY LAYERS FOR THE LEGEND / LAYER SWITCHER ---
+var lyr_MentalDisorders = new ol.layer.Vector({
+    title: 'Mental Disorders',
+    visible: false,
+    source: new ol.source.Vector({ features: [] }),
+    style: null,
+    interactive: false
+});
+lyr_MentalDisorders.set('displayInLayerSwitcher', true);
+lyr_MentalDisorders.set('noOpacity', true);
+
+var lyr_Multimorbidity = new ol.layer.Vector({
+    title: 'Multi-morbidity',
+    visible: false,
+    source: new ol.source.Vector({ features: [] }),
+    style: null,
+    interactive: false
+});
+lyr_Multimorbidity.set('displayInLayerSwitcher', true);
+lyr_Multimorbidity.set('noOpacity', true);
+
+var lyr_HealthVulnerabilityIndicator = new ol.layer.Vector({
+    title: 'Health Vulnerability Indicator',
+    visible: false,
+    source: new ol.source.Vector({ features: [] }),
+    style: null,
+    interactive: false
+});
+lyr_HealthVulnerabilityIndicator.set('displayInLayerSwitcher', true);
+lyr_HealthVulnerabilityIndicator.set('noOpacity', true);
+
+// force them to stay invisible even if clicked
+[lyr_MentalDisorders, lyr_Multimorbidity, lyr_HealthVulnerabilityIndicator].forEach(function(lyr) {
+    lyr.on('change:visible', function() {
+        if (lyr.getVisible()) lyr.setVisible(false);
+    });
+});
+
+var group_HealthIndicators = new ol.layer.Group({
+    layers: [
+        lyr_HealthVulnerabilityIndicator,
+        lyr_Multimorbidity, lyr_MentalDisorders
+        
+    ],
+    openInLayerSwitcher: true,
+    title: 'Health Indicators',
+    noOpacity: true
+});
+
 
 
 lyr_Voyager.setVisible(false);
@@ -573,7 +622,7 @@ lyr_Bambini.setVisible(false);lyr_Anziani.setVisible(false);lyr_Stranieri.setVis
 lyr_TemperaturaSperficiale.setVisible(false);lyr_PresidiSocioassistenzialiAnziani.setVisible(false);lyr_EdificiPubblici.setVisible(false);lyr_CasediComunit.setVisible(false);lyr_OspedaliCensiti.setVisible(false);
 lyr_SezionidiCensimento.setVisible(false);lyr_ComunediBologna.setVisible(false);
 
-var layersList = [lyr_OSMStandard,group_IndicatoriClimatici,group_IndicatoriSocioDemografici,
+var layersList = [lyr_OSMStandard,group_IndicatoriClimatici,group_IndicatoriSocioDemografici,group_HealthIndicators,
     group_InfrastrutureSocioSanitarie,group_RegioneEmiliaRomagna];
 
 lyr_VulnerabilitClimatica.set('fieldAliases', {'fid': 'fid', 'index_cont': 'index_cont', });

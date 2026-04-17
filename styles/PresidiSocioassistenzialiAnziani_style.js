@@ -5,21 +5,8 @@ function categories_PresidiSocioassistenzialiAnziani(feature, value, clusterSize
                 var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
                 switch(valueStr) {case 'Alloggi Con Servizi':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.8 + clusterSize,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(166,206,227,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(166,206,227,0.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, textPlacement, bufferColor,
-                              bufferWidth)
-    }),new ol.style.Style({
-        image: new ol.style.Icon({
-                  imgSize: [800, 800],
-                  scale: 0.0175,
-                  anchor: [400.0, 400.0],
-                  anchorXUnits: "pixels",
-                  anchorYUnits: "pixels",
-                  rotation: 0.0,
-                  src: "styles/elderly-svgrepo-com.svg"
-            }),
+        image: new ol.style.RegularShape({radius: 6.8 + clusterSize, points: 3,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(128,174,198,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(166,206,227,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, textPlacement, bufferColor,
                               bufferWidth)
@@ -27,21 +14,8 @@ function categories_PresidiSocioassistenzialiAnziani(feature, value, clusterSize
                     break;
 case 'Casa Di Riposo/Casa Albergo/Albergo per Anziani':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.8 + clusterSize,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(227,26,87,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(166,206,227,0.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, textPlacement, bufferColor,
-                              bufferWidth)
-    }),new ol.style.Style({
-        image: new ol.style.Icon({
-                  imgSize: [800, 800],
-                  scale: 0.0175,
-                  anchor: [400.0, 400.0],
-                  anchorXUnits: "pixels",
-                  anchorYUnits: "pixels",
-                  rotation: 0.0,
-                  src: "styles/elderly-svgrepo-com_1.svg"
-            }),
+        image: new ol.style.RegularShape({radius: 6.8 + clusterSize, points: 3,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(169,52,63,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(227,26,44,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, textPlacement, bufferColor,
                               bufferWidth)
@@ -49,21 +23,8 @@ case 'Casa Di Riposo/Casa Albergo/Albergo per Anziani':
                     break;
 case 'Casa Famiglia Anziani':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.8 + clusterSize,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(31,120,180,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(166,206,227,0.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, textPlacement, bufferColor,
-                              bufferWidth)
-    }),new ol.style.Style({
-        image: new ol.style.Icon({
-                  imgSize: [800, 800],
-                  scale: 0.0175,
-                  anchor: [400.0, 400.0],
-                  anchorXUnits: "pixels",
-                  anchorYUnits: "pixels",
-                  rotation: 0.0,
-                  src: "styles/elderly-svgrepo-com_2.svg"
-            }),
+        image: new ol.style.RegularShape({radius: 6.8 + clusterSize, points: 3,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(52,90,116,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(31,120,180,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, textPlacement, bufferColor,
                               bufferWidth)
@@ -71,21 +32,8 @@ case 'Casa Famiglia Anziani':
                     break;
 case 'Casa Protetta Per Anziani':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.8 + clusterSize,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(255,127,0,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(166,206,227,0.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, textPlacement, bufferColor,
-                              bufferWidth)
-    }),new ol.style.Style({
-        image: new ol.style.Icon({
-                  imgSize: [800, 800],
-                  scale: 0.0175,
-                  anchor: [400.0, 400.0],
-                  anchorXUnits: "pixels",
-                  anchorYUnits: "pixels",
-                  rotation: 0.0,
-                  src: "styles/elderly-svgrepo-com_3.svg"
-            }),
+        image: new ol.style.RegularShape({radius: 6.8 + clusterSize, points: 3,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(166,101,37,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(255,127,0,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, textPlacement, bufferColor,
                               bufferWidth)
@@ -93,21 +41,8 @@ case 'Casa Protetta Per Anziani':
                     break;
 case 'Centro Diurno Per Anziani (Centro Diurno Assistenziale)':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.8 + clusterSize,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(124,91,181,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(166,206,227,0.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, textPlacement, bufferColor,
-                              bufferWidth)
-    }),new ol.style.Style({
-        image: new ol.style.Icon({
-                  imgSize: [800, 800],
-                  scale: 0.0175,
-                  anchor: [400.0, 400.0],
-                  anchorXUnits: "pixels",
-                  anchorYUnits: "pixels",
-                  rotation: 0.0,
-                  src: "styles/elderly-svgrepo-com_4.svg"
-            }),
+        image: new ol.style.RegularShape({radius: 6.8 + clusterSize, points: 3,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(70,49,107,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(124,91,181,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, textPlacement, bufferColor,
                               bufferWidth)
@@ -115,21 +50,8 @@ case 'Centro Diurno Per Anziani (Centro Diurno Assistenziale)':
                     break;
 case 'Comunita Alloggio Per Anziani':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.8 + clusterSize,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(51,160,44,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(166,206,227,0.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, textPlacement, bufferColor,
-                              bufferWidth)
-    }),new ol.style.Style({
-        image: new ol.style.Icon({
-                  imgSize: [800, 800],
-                  scale: 0.0175,
-                  anchor: [400.0, 400.0],
-                  anchorXUnits: "pixels",
-                  anchorYUnits: "pixels",
-                  rotation: 0.0,
-                  src: "styles/elderly-svgrepo-com_5.svg"
-            }),
+        image: new ol.style.RegularShape({radius: 6.8 + clusterSize, points: 3,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(58,107,55,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(51,160,44,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, textPlacement, bufferColor,
                               bufferWidth)
@@ -137,21 +59,8 @@ case 'Comunita Alloggio Per Anziani':
                     break;
 case 'CRA':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.8 + clusterSize,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(253,191,111,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(166,206,227,0.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, textPlacement, bufferColor,
-                              bufferWidth)
-    }),new ol.style.Style({
-        image: new ol.style.Icon({
-                  imgSize: [800, 800],
-                  scale: 0.0175,
-                  anchor: [400.0, 400.0],
-                  anchorXUnits: "pixels",
-                  anchorYUnits: "pixels",
-                  rotation: 0.0,
-                  src: "styles/elderly-svgrepo-com_6.svg"
-            }),
+        image: new ol.style.RegularShape({radius: 6.8 + clusterSize, points: 3,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(188,151,104,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(253,191,111,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, textPlacement, bufferColor,
                               bufferWidth)
@@ -159,21 +68,8 @@ case 'CRA':
                     break;
 case 'Gruppo appartamento per anziani':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.8 + clusterSize,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(251,154,153,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(166,206,227,0.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, textPlacement, bufferColor,
-                              bufferWidth)
-    }),new ol.style.Style({
-        image: new ol.style.Icon({
-                  imgSize: [800, 800],
-                  scale: 0.0175,
-                  anchor: [400.0, 400.0],
-                  anchorXUnits: "pixels",
-                  anchorYUnits: "pixels",
-                  rotation: 0.0,
-                  src: "styles/elderly-svgrepo-com_7.svg"
-            }),
+        image: new ol.style.RegularShape({radius: 6.8 + clusterSize, points: 3,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(177,104,103,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(251,154,153,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, textPlacement, bufferColor,
                               bufferWidth)
@@ -181,21 +77,8 @@ case 'Gruppo appartamento per anziani':
                     break;
 case 'Residenza Protetta Per Anziani':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.8 + clusterSize,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(147,185,113,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(166,206,227,0.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, textPlacement, bufferColor,
-                              bufferWidth)
-    }),new ol.style.Style({
-        image: new ol.style.Icon({
-                  imgSize: [800, 800],
-                  scale: 0.0175,
-                  anchor: [400.0, 400.0],
-                  anchorXUnits: "pixels",
-                  anchorYUnits: "pixels",
-                  rotation: 0.0,
-                  src: "styles/elderly-svgrepo-com_8.svg"
-            }),
+        image: new ol.style.RegularShape({radius: 6.8 + clusterSize, points: 3,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(124,94,86,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(159,95,77,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, textPlacement, bufferColor,
                               bufferWidth)

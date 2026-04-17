@@ -248,93 +248,7 @@
 	geocoder.options.lang = 'en-US';   // it-IT, pt-BR, fr-FR
 </script> 
 
-<!-- bookmark 	
-<script> 
-		bm.setBookmarks({
-			Quartiere_1: {pos:ol.proj.transform([2351142,4842857], 'EPSG:3004', 'EPSG:25832'), zoom:15},
-			Quartiere_2: {pos:ol.proj.transform([2352404,4841605], 'EPSG:3004', 'EPSG:25832'), zoom:15},
-			Quartiere_3: {pos:ol.proj.transform([2355410,4838774], 'EPSG:3004', 'EPSG:25832'), zoom:15},
-			Quartiere_4: {pos:ol.proj.transform([2357220,4839534], 'EPSG:3004', 'EPSG:25832'), zoom:15},
-			});
-		map.addControl(bm);	  			  
-</script> -->
 
-<!-- search feature 
-<script>
-		function searchFeatures() {
-			// Insert combo box for source choice
-			var selectElt = document.createElement('select');
-			var buttonElt = search.element.querySelector('button');
-			search.element.insertBefore(selectElt, buttonElt);
-			//// Example: Collection to merge multiple sources
-			//class sourceCollection extends ol.source.Vector {
-			//	constructor(opt) {
-			//		opt = opt || {};
-			//		super(opt);
-			//		this._sources = opt.sources;
-			//	}
-			//	getFeatures() {
-			//		var a = [];
-			//		this._sources.forEach(s => a = a.concat(s.getFeatures()));
-			//		return a;
-			//	}
-			//}
-			//// Define all source layers
-			//const combinedSource = new sourceCollection({
-			//	sources: [jsonSource_1, jsonSource_2, jsonSource_3]
-			//});
-
-			// Set options to search in different source, one at a time
-			['Option_1', 'Option_2'].forEach(function (l) {
-			  ol.ext.element.create('OPTION', {
-				text: l,
-				parent: selectElt
-			  });
-			});
-			// For each option set data to perform the search
-			function handleComboBoxChange() {
-			  search.clearHistory();
-			  search.setInput('');
-			  isManualSearch = true;
-
-			  if (selectElt.value === 'Option_1') {
-				search.setSource(jsonSource_Option1);
-				search.set('property', 'FieldName');
-				search.set('placeholder', 'Find (es: F17 P44) ...');
-				if (isManualSearch) {
-					search.on('select', function(e) { lyr_Option1.setVisible(true); }); //show layer when search
-				}
-				//// Example: search in a field but the list reports a sum of values ​​from the feature
-				//search.getTitle = function(f) {
-				//	var title = 'F' + f.get('FOGLIO') + ' ' + 'P' + f.get('PARTICELLA');
-				//	return title;
-				//};				
-			  } 
-			  if (selectElt.value === 'Option_2') {
-				search.setSource(jsonSource_Option2);
-				search.set('property', 'FieldName');
-				search.set('placeholder', 'Find Cod (es: F-05-0123)');
-				if (isManualSearch) {
-					search.on('select', function(e) { lyr_Option2.setVisible(true); }); //show layer when search
-				}
-			  }
-			  // Reset del placeholder nella barra di ricerca
-			  var inputField = search.element.querySelector('.ol-search input');
-			  inputField.placeholder = search.get('placeholder');
-			}
-			handleComboBoxChange();
-
-			// Change event
-			selectElt.addEventListener('change', function() {
-			  handleComboBoxChange(); 
-			});	
-		}
-		if (window.layersLoadedFlag) {
-			searchFeatures();
-		} else {
-			document.addEventListener('layersLoaded', searchFeatures);
-		}
-</script> -->
 <!-- overview map -->		
 <script>
 			var MaxMapExtent = map.getView().getProperties().extent;
@@ -345,33 +259,6 @@
        			url: 'https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'
 					}) })
 				],
-
-				// google satellite example
-			/* 	layers: [ 
-					new ol.layer.Tile({
-					source: new ol.source.XYZ({
-						url: 'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}'
-					})
-					}),
-				], */
-
-				// opentopo example
-			/* 	layers: [ 
-					new ol.layer.Tile({
-					source: new ol.source.XYZ({
-						url: 'https://tile.opentopomap.org/{z}/{x}/{y}.png'
-					})
-					}),
-				], */
-				//static image example, set also minZoom and maxZoom
-			/* 	layers: [ 
-					new ol.layer.Image({
-						source: new ol.source.ImageStatic({
-							url: './resources/minimap.png',
-							imageExtent: MaxMapExtent,
-						})
-					})
-				], */
 
 			  projection: currentProjection,
 			  //minZoom: '10.5',
@@ -386,32 +273,7 @@
 			// Set button title
 			overviewbuttontitle.attr('title', 'Minimap');			
 </script>
-<!-- scale line
-<script>
-		scaleLine.setUnits('imperial')
-</script> -->
-<!-- mouse position coordinates 
-<script>
-		currentProjection = 'EPSG:3857'
-		mousePositionDefault.setProjection(ol.proj.get(currentProjection));
-</script> -->
 
-<!-- streetview api key -->
-<script>
-	opt_options.apiKey = ''; //define your own apikey to remove "for development purposes only"
-	streetView = new StreetView(opt_options);
-	map.addControl(streetView);
-	streetView.on('streetViewInit', function () {				
-		if (typeof opt_options.apiKey === 'undefined' || opt_options.apiKey === '') {
-		  $('#ol-street-view--panorama').css('filter', 'invert(1)');
-		}
-	});
-</script>
-<!-- attribution 
-<script>	
-	// Define your own static attribution
-	attributionList.innerHTML = `<a>Data Source: </a>`;
-</script> -->
 <!-- remove control -->
 <script>
 	map.removeControl(geocoder);				// remove address search

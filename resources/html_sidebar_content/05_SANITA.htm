@@ -61,45 +61,47 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <h2 style='text-align:left'><span class=SpellE><!-- /wp:heading --><!-- wp:paragraph --><!-- /wp:paragraph --><!-- wp:paragraph --><span
 style='font-size:11.0pt;font-family:"Arial",sans-serif;font-weight:normal'>
 
-La sezione contiene gli indicatori di vulnerabilit&#224; sanitaria. Gli indicatori sono costituiti 
-dalla stima di casi prevalenti del 2024, distribuiti su una griglia di celle di 100x100 metri (10000 m<sup>2</sup>), 
-dei seguenti gruppi di patologie:
-<ul>
-<li> <b>Disturbi mentali</b>, secondo definizione dell'International Classification of Diseases 
-  9-Clinical Modification (ICD-9-CM), che comprende patologie come psicosi, disturbo bipolare, 
-  schizofrenia, depressione maggiore, e demenza. Sono inclusi in questa categoria anche gli individui 
-  con disturbi mentali che soffrono di altre patologie croniche concomitanti. </li>
-<li> <b>Multi-cronicit&#224;</b>. In questa categoria rientrano gli individui con due o 
-  pi&#249; patologie croniche maggiori, tra le trenta considerate. 
-  Per un elenco completo delle patologie croniche maggiori considerate si rimanda alle note 
-  metodologiche dei profili si salute: 
-  <a href="https://servizissiir.regione.emilia-romagna.it/profilisalute/metodi_cronicit%C3%A0.pdf" target="_blank" rel="noopener noreferrer">servizissiir.regione.emilia-romagna.it/profilisalute/metodi_cronicit&#224;</a> </li>
-<li> <b>Indicatore di vulnerabilit&#224; sanitaria</b> (complessivo), comprendente gli individui 
-  che rientrano in almeno una delle due categorie precedenti. 
-  Questo indicatore non &#232; la semplice somma dei primi due, poich&#233; ogni persona 
-  viene considerata una sola volta anche se soddisfa entrambi i criteri. </li>
-</ul>
+This section presents health vulnerability indicators. These indicators are based on estimates 
+of prevalent cases in 2024, distributed over a grid of 100&#10761;100m cells (10,000 m&sup2;), 
+for the following groups of conditions:
+<ul> <li><b>Mental Disorders</b>, defined according to the International Classification of 
+    Diseases, 9th Revision, Clinical Modification (ICD-9-CM). 
+    This includes conditions such as psychosis, bipolar disorder, schizophrenia, 
+    major depression, and dementia. Individuals with mental disorders who also have 
+    other chronic conditions are included in this category.
+</li> <li><b>Multi-morbidity</b>: individuals affected by two or more major chronic conditions 
+    (from a set of thirty conditions considered). For the full list of conditions, 
+    see the <a href="https://servizissiir.regione.emilia-romagna.it/profilisalute/metodi_cronicit%C3%A0.pdf" target="_blank" rel="noopener noreferrer">methodological notes</a>. </li>
+<li><b>Health Vulnerability Indicator</b> (overall): includes individuals who fall 
+    into at least one of the two categories above. This indicator is not the simple 
+    sum of the previous two, as each person is counted only once, even if they meet 
+    both criteria.</li> </ul>
 
-I casi prevalenti sono stati individuati attraverso il record-linkage di 13 database sanitari regionali,
- mediante identificativo anonimizzato dei residenti. L'individuazione dei gruppi di patologie 
- si basa sui codici ICD9-CM di diagnosi e procedure, rilevati negli ultimi 4 anni, compresivi 
- dell'anno di riferimento, i codici ATC dei farmaci rilevati negli ultimi 2 anni, 
- e l'esenzione patologia specifica attiva nell'anno di riferimento. Per maggiori dettagli sui criteri di selezione si rimanda alle note metodologiche dei profili 
- di salute: <a href="https://servizissiir.regione.emilia-romagna.it/profilisalute/metodi_cronicit%C3%A0.pdf" target="_blank" rel="noopener noreferrer">servizissiir.regione.emilia-romagna.it/profilisalute/metodi_cronicit&#224;</a>. 
- Sono stati esclusi dalla selezione gli individui non autosufficienti, istituzionalizzati presso i 
- Centri di Residenza per gli Anziani (CRA) o che ricevono Assistenza Domiciliare Integrata (ADI). 
- 
- <br><br>
-Ciascun caso prevalente &#232; stato inizialmente attribuito alla sezione di censimento di residenza 
-mediante tecniche di geo-referenziazione. All'interno della stessa sezione, 
-la posizione del caso &#232; stata sottoposta ad una disaggregazione spaziale coerente con la distribuzione della popolazione, 
-utilizzando i dati del <a href="https://data.jrc.ec.europa.eu/collection/ghsl" target="_blank" rel="noopener noreferrer">Global Human Settlement Layer Project </a> della Commissione Europea 
-su una griglia di celle di 100x100 metri. Questa procedura di downscaling permette di ottenere un dato con granularit&#224; 
-uniforme e pi&#249; fine, dal momento che l'area mediana di una sezione di censimento abitata &#232; di 
-A=26379 m<sup>2</sup> (corrispondente circa ad una cella di 162x162m), e permette un pi&#249; agevole confronto 
-tra zone differenti. In questo modo, la distribuzione spaziale degli eventi sensibili alle ondate di calore 
-tiene conto del fatto che ciascun caso prevalente si trovi pi&#249; probabilmente nelle aree pi&#249; popolate della sezione. 
+Prevalent cases were identified through record linkage across 13 regional healthcare databases, 
+using anonymized individual identifiers. Condition groups were defined based on ICD-9-CM 
+diagnosis and procedure codes recorded over the past 4 years (including the reference year), 
+ATC drug codes from the past 2 years, and disease-specific exemption status active in the 
+reference year. For more details, see the <a href="https://servizissiir.regione.emilia-romagna.it/profilisalute/metodi_cronicit%C3%A0.pdf" target="_blank" rel="noopener noreferrer">methodological notes</a>.
 
+Individuals who are not self-sufficient, living in residential care facilities for the 
+elderly, or receiving integrated home care, were excluded.
+
+<br><br>
+
+Each prevalent case was initially assigned to its census section of residence using 
+georeferencing techniques. Within each section, cases were then spatially redistributed 
+according to population distribution, using data from the
+<a href="https://data.jrc.ec.europa.eu/collection/ghsl" target="_blank" rel="noopener noreferrer">Global Human Settlement Layer Project</a> 
+of the European Commission, on a 100&#10761;100m grid.
+
+This downscaling approach produces more uniform and finer spatial detail, 
+as the median area of an inhabited census section is A = 26,379 m&sup2; 
+(approximately equivalent to a 162&#10761;162m cell), and allows easier 
+comparison across different areas.
+
+In this way, the spatial distribution of heat-sensitive health conditions 
+reflects the higher likelihood that individuals are located in more densely 
+populated areas within each census section.
 
 	</span><o:p></o:p></span></h2>
 </body>

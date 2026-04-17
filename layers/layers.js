@@ -203,7 +203,7 @@ var format_IndicediDeprivazione = new ol.format.GeoJSON();
 var features_IndicediDeprivazione = format_IndicediDeprivazione.readFeatures(json_IndicediDeprivazione, 
     {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_IndicediDeprivazione = new ol.source.Vector({
-    attributions: '<a class="legend"><b>Socioeconomic Deprivation Index</b><br />\
+    attributions: '<a class="legend"><b>Socio-economic Deprivation Index</b><br />\
         <img src="styles/legend/IndicediDeprivazione_0.png" /> 1<br />\
         <img src="styles/legend/IndicediDeprivazione_1.png" /> 2<br />\
         <img src="styles/legend/IndicediDeprivazione_2.png" /> 3<br />\
@@ -223,7 +223,7 @@ var lyr_IndicediDeprivazione = new ol.layer.VectorImage({
     popuplayertitle: 'Indice di Deprivazione',
     creationdate: '2026-03-30 23:11:30',
     interactive: false,
-    title: '<div id="layertitle">Socioeconomic Deprivation Index<br />\
+    title: '<div id="layertitle">Socio-economic Deprivation Index<br />\
         <i class="fas fa-angle-up" id="secondImage"></i><i class="fas fa-angle-down" id="firstImage"></i></div><a class="layerlegend">\
         <img src="styles/legend/IndicediDeprivazione_0.png" /> 1<br />\
         <img src="styles/legend/IndicediDeprivazione_1.png" /> 2<br />\
@@ -545,7 +545,7 @@ jsonSource_ComunediBologna.addFeatures(features_ComunediBologna);
 
 
 var group_RegioneEmiliaRomagna = new ol.layer.Group({
-                                layers: [lyr_SezionidiCensimento,lyr_ComunediBologna,lyr_Voyager,],
+                                layers: [lyr_SezionidiCensimento,lyr_Voyager,lyr_ComunediBologna,],
                                 openInLayerSwitcher: true,
                                 title: 'Boundaries and Labels',
                                 noOpacity: true});

@@ -10,7 +10,7 @@ The system enables the integration and exploration of environmental, socio-demog
 
 The demo is **limited to the municipality of Bologna** and is intended to illustrate the core functionalities of the system.
 
-⚠️ **Important note**  
+**Important note**  
 Due to privacy and data protection constraints:
 - Health-related data are **not included**
 - Some layers are **disabled**
@@ -36,40 +36,6 @@ The system is designed as a **decision-support tool**, allowing the exploration 
 - Population-weighted visualization
 - Infrastructure overlays (e.g., public buildings, healthcare facilities)
 - Contextual side panels describing datasets and indicators
-
----
-
-## 📊 Data Sources
-
-The full system integrates:
-
-- **Environmental data**
-  - Land Surface Temperature (Landsat 8, USGS)
-  - Climate Vulnerability Index (GWPCA-based)
-
-- **Socio-demographic data**
-  - 2021 Permanent Population Census (ISTAT)
-  - Material and social deprivation indicators
-
-- **Health data** *(not included in demo)*
-  - Prevalence of mental disorders and multi-morbidity
-  - Composite health vulnerability indicator
-  - Derived from linked regional healthcare databases
-
-- **Infrastructure data**
-  - Regional administrative datasets
-  - OpenStreetMap (OSM)
-
-- **Population data**
-  - Global Human Settlement Layer (GHSL, European Commission JRC)
-
----
-
-## ⚙️ Methodological Overview
-
-Data were harmonised within a common spatial framework, allowing the integration of datasets with different spatial resolutions.
-Health data, originally available at census section level, were disaggregated using population-weighted redistribution based on the GHSL.
-The system preserves datasets as **independent but combinable layers**, enabling users to explore individual indicators while conducting integrated analysis.
 
 ---
 
@@ -100,19 +66,6 @@ This demo supports the paper:
 
 > *Interactive Multi-Layer Visualisation for Climate Shelter Planning: A Case Study in Emilia-Romagna, Italy*
 Submitted to **Visualising Climate 2026** and under consideration for **Journal of Visualisation and Interaction (JoVI)**.
-
----
-
-## 🔒 Data Availability
-
-Due to privacy constraints, health-related data cannot be publicly shared.
-
-The repository includes:
-- the application structure
-- visualization logic
-- example datasets
-
-These materials allow replication of the system using alternative or open data sources.
 
 ---
 

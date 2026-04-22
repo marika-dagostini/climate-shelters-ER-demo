@@ -71,7 +71,7 @@ Submitted to **Visualising Climate 2026** and under consideration for **Journal 
 
 ### 📜 License
 
-This work is licensed under a **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
+This work is licensed under a **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)** license.
 
 ---
 

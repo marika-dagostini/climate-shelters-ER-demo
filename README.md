@@ -66,7 +66,7 @@ The system was developed through the following pipeline:
 
 This demo supports the paper:
 
-> *Interactive Multi-Layer Visualisation for Climate Shelter Planning: A Case Study in Emilia-Romagna, Italy*
+> (D'Agostini M. et al., 2026) *Interactive Multi-Layer Visualisation for Climate Shelter Planning: A Case Study in Emilia-Romagna, Italy*
 Submitted to **Visualising Climate 2026** and under consideration for **Journal of Visualisation and Interaction (JoVI)**.
 
 ---

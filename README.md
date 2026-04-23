@@ -2,7 +2,9 @@
 
 This repository contains a demonstration version of an interactive web-based visual analytics system designed to support municipal decision-making for the planning of climate shelters (“climate oases”) in the Emilia-Romagna region, Italy.
 
-The system enables the integration and exploration of environmental, socio-demographic, and infrastructural data through a multi-layer interactive map.
+The system allows the integration and exploration of environmental, socio-demographic, and infrastructural data through a multi-layer interactive map.
+
+:point_right: Click here to see the web application: https://marika-dagostini.github.io/climate-shelters-ER-demo/ 
 
 ---
 
@@ -33,7 +35,7 @@ The system is designed as a **decision-support tool**, allowing the exploration 
 - Dynamic layer selection (on/off)
 - Transparency-based compositing
 - Integration of heterogeneous datasets at different spatial scales
-- Population-weighted visualization
+- Population-weighted visualisation
 - Infrastructure overlays (e.g., public buildings, healthcare facilities)
 - Contextual side panels describing datasets and indicators
 
